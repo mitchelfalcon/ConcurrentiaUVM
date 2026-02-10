@@ -46,13 +46,19 @@ ConcurrentiaUVM/
 
 A continuación se presentan los códigos fuente necesarios para la compilación manual.
 
+-------------------------------------------
 ### 1. Código: `mpi_hello.c` (Programa A)
+--------------------------------------------
 Este código implementa la lógica Cliente-Servidor donde el Rank 0 actúa como servidor.
 
+
+
 **************************************************************************************
-#include <mpi.h>
-#include <stdio.h>
-#include <string.h>
+*
+#
+include <mpi.h>
+include <stdio.h>
+include <string.h>
 
 int main(int argc, char** argv) {
     int rank, size;
@@ -86,12 +92,17 @@ int main(int argc, char** argv) {
 ****************************************************************************
 
 
-****************************************************************************
 2. Código: mpi_sum.c (Programa B)
 Este código implementa el patrón Maestro-Trabajadores para sumar rangos de números.
-#include <mpi.h>
-#include <stdio.h>
-#include <stdlib.h>
+
+
+
+****************************************************************************
+*
+#
+include <mpi.h>
+include <stdio.h>
+include <stdlib.h>
 
 int main(int argc, char** argv) {
     int rank, size;
