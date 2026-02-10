@@ -350,4 +350,4 @@ Versión: 2.0.0 - Migrado de PVM a MPI (MPICH)
 Estado: ✅ Etapa 1 Completada
 <div align="center">
 <p>Creado con 💓 para ayudar a estudiantes a aprender programación</p>
-</div>
+</div> 
