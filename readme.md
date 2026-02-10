@@ -49,7 +49,7 @@ A continuación se presentan los códigos fuente necesarios para la compilación
 ### 1. Código: `mpi_hello.c` (Programa A)
 Este código implementa la lógica Cliente-Servidor donde el Rank 0 actúa como servidor.
 
-```c
+**************************************************************************************
 #include <mpi.h>
 #include <stdio.h>
 #include <string.h>
@@ -83,7 +83,10 @@ int main(int argc, char** argv) {
     MPI_Finalize();
     return 0;
 }
+****************************************************************************
 
+
+****************************************************************************
 2. Código: mpi_sum.c (Programa B)
 Este código implementa el patrón Maestro-Trabajadores para sumar rangos de números.
 #include <mpi.h>
@@ -150,6 +153,8 @@ int main(int argc, char** argv) {
     MPI_Finalize();
     return 0;
 }
+
+**************************************************************************************
 
 🔧 Requisitos del Sistema
 Software Necesario
@@ -332,22 +337,31 @@ top
 | Sintaxis | Propietaria | Estándar POSIX |
 | Soporte | Limitado | ✅ Activo |
 Conclusión: MPI es superior en todos los aspectos y es el estándar de la industria actual.
+
+
 📚 Referencias Técnicas
  * Gropp, W., Lusk, E., & Skjellum, A. (2014). Using MPI: Portable Parallel Programming with the Message-Passing Interface (3rd ed.). MIT Press.
  * Pacheco, P. (2011). An Introduction to Parallel Programming. Morgan Kaufmann.
  * MPI Forum. (2021). MPI: A Message-Passing Interface Standard Version 4.0. Recuperado de https://www.mpi-forum.org/
  * MPICH Documentation. (2024). MPICH User's Guide. Argonne National Laboratory. https://www.mpich.org/documentation/
  * Tanenbaum, A. S. (2015). Modern Operating Systems (4th ed.). Pearson.
+
+   
 👥 Equipo de Desarrollo
  * Integrante 1: NAILEA MITCHEL FALCON TRIANA
+
+   
 📝 Licencia
 Este proyecto es material académico para la asignatura de Programación Concurrente de la Universidad del Valle de México (UVM).
 📞 Contacto
 Para dudas o consultas sobre el proyecto, contactar a través de la plataforma educativa UVM o el repositorio de GitHub:
 Repositorio: https://github.com/mitchelfalcon/ConcurrentiaUVM.git
+
+
 Última actualización: Febrero 2025
 Versión: 2.0.0 - Migrado de PVM a MPI (MPICH)
 Estado: ✅ Etapa 1 Completada
+
 <div align="center">
 <p>Creado con 💓 para ayudar a estudiantes a aprender programación</p>
 </div> 
